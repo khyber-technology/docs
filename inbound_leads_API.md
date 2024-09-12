@@ -4,7 +4,7 @@ The System uses form data to create a new client lead.
 
 Form data is sent to the server via a POST request.
 
-URL: `https://system.yourexpert.co.uk/f/inbound`
+URL: `https://system.yourdomain.co.uk/f/inbound`
 
 Matched fields are:
 
@@ -56,7 +56,7 @@ Fail:
 Here's an example of a form setup:
 
 ```html
-<form action="https://system.yourexpert.co.uk/f/inbound" method="POST">
+<form action="https://system.yourdomain.co.uk/f/inbound" method="POST">
 
     <label for="title">Title</label>
     <select name="title" id="title">
@@ -125,7 +125,7 @@ function post_to_system(
     form.append('campaign_id', campaign_id);
     form.append('source_marker', source_marker);
 
-    fetch('https://system.yourexpert.co.uk/f/inbound', {
+    fetch('https://system.yourdomain.co.uk/f/inbound', {
         method: 'POST',
         headers: {
             'cors': 'no-cors',
